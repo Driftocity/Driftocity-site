@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 20px auto;
+  color: #aaa;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section.dark {
+  background: #0f172a;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.dim {
+  opacity: 0.5;
+}
+
+.cta {
+  text-align: center;
+  padding: 80px 20px;
+  background: #0f172a;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
