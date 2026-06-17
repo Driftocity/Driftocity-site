@@ -1,18 +1,9 @@
-/* =========================
-   BASE STYLES
-========================= */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #ffffff;
   color: #111;
 }
-
-/* =========================
-   NAVIGATION
-========================= */
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -35,10 +26,6 @@ body {
   font-size: 20px;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
-
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -56,10 +43,6 @@ body {
   max-width: 700px;
   margin: 0 auto 20px;
 }
-
-/* =========================
-   BUTTONS (FIXED BLUE STYLE)
-========================= */
 
 .btn,
 .btn-buy {
@@ -81,11 +64,6 @@ body {
 .secondary {
   background: #e2e8f0;
   color: #111;
-}
-
-/* =========================
-   SECTIONS
-========================= */
 
 .section {
   padding: 60px 20px;
@@ -96,10 +74,6 @@ body {
   background: #0f172a;
   color: white;
 }
-
-/* =========================
-   GRID LAYOUT
-========================= */
 
 .grid {
   display: grid;
@@ -114,10 +88,6 @@ body {
 .grid.small {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
-
-/* =========================
-   CARDS
-========================= */
 
 .card {
   background: #ffffff;
@@ -135,19 +105,11 @@ body {
   opacity: 0.6;
 }
 
-/* =========================
-   CTA SECTION
-========================= */
-
 .cta {
   padding: 60px 20px;
   text-align: center;
   background: #f1f5f9;
 }
-
-/* =========================
-   FOOTER
-========================= */
 
 footer {
   text-align: center;
