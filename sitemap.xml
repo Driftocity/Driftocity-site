@@ -3,4 +3,24 @@
   <url>
     <loc>https://driftocity.com/</loc>
   </url>
+  <?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://driftocity.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://driftocity.com/contractor-ai-prompts.html</loc>
+  </url>
+
+  <url>
+    <loc>https://driftocity.com/marketing-toolkit.html</loc>
+  </url>
+
+  <url>
+    <loc>https://driftocity.com/build-cost-estimator.html</loc>
+  </url>
+
+</
 </urlset>
