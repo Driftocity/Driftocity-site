@@ -46,8 +46,13 @@ function showToast() {
 
 /* ── AUTO-HIGHLIGHT CURRENT NAV LINK ── */
 (function() {
-  const path = window.location.pathname.split('/').pop() || 'index.html';
+  // Normalize current path: strip trailing slash and optional .html
+  let path = window.location.pathname.replace(/\/index\.html?$/, '/').replace(/\.html$/, '');
+  if (path.length > 1) path = path.replace(/\/$/, '');
+  if (path === '') path = '/';
+
   document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
-    if (a.getAttribute('href') === path) a.classList.add('active');
+    const target = a.dataset.page;
+    if (target === path) a.classList.add('active');
   });
 })();
