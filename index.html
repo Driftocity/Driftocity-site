@@ -37,23 +37,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
 
 <nav role="navigation" aria-label="Main navigation">
-  <a class="nav-logo" href="index.html">Drift<span>ocity</span></a>
+  <a class="nav-logo" href="/">Drift<span>ocity</span></a>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" data-page="index.html" class="active">Home</a></li>
-    <li><a href="products.html" data-page="products.html">Products</a></li>
-    <li><a href="web-design.html" data-page="web-design.html">Web Design</a></li>
-    <li><a href="custom-builds.html" data-page="custom-builds.html">Custom Builds</a></li>
-    <li><a href="about.html" data-page="about.html">About</a></li>
-    <li><a href="contact.html" data-page="contact.html">Contact</a></li>
-    <li><a href="custom-builds.html" class="nav-cta">Get a Quote</a></li>
+    <li><a href="/" data-page="/" class="active">Home</a></li>
+    <li><a href="/products" data-page="/products">Products</a></li>
+    <li><a href="/web-design" data-page="/web-design">Web Design</a></li>
+    <li><a href="/custom-builds" data-page="/custom-builds">Custom Builds</a></li>
+    <li><a href="/about" data-page="/about">About</a></li>
+    <li><a href="/contact" data-page="/contact">Contact</a></li>
+    <li><a href="/custom-builds" class="nav-cta">Get a Quote</a></li>
   </ul>
 </nav>
 
@@ -69,8 +69,8 @@
         Driftocity makes AI-powered SaaS tools and expert PDF guides that help entrepreneurs, contractors, and business owners work smarter — without the overhead.
       </p>
       <div class="hero-actions">
-        <a class="btn-primary" href="products.html">Explore Products</a>
-        <a class="btn-outline" href="about.html">Our Story</a>
+        <a class="btn-primary" href="/products">Explore Products</a>
+        <a class="btn-outline" href="/about">Our Story</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
@@ -112,13 +112,13 @@
       <p class="section-sub">From full SaaS tools you can run in your browser to deep-dive PDF guides you can reference forever.</p>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;">
-        <a class="product-card" href="products.html#saas">
+        <a class="product-card" href="/products#saas">
           <div class="card-icon icon-saas" style="font-size:2rem;">&#128736;&#65039;</div>
           <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:12px;">SaaS Apps & Tools</h3>
           <p style="color:var(--slate);font-size:0.9rem;line-height:1.7;flex:1;">AI-powered web applications you access immediately. Automate workflows, generate business plans, estimate projects, and more — no installs, no contracts.</p>
           <div style="margin-top:24px;color:var(--indigo2);font-size:0.85rem;font-weight:600;">Browse Apps &rarr;</div>
         </a>
-        <a class="product-card" href="products.html#pdf">
+        <a class="product-card" href="/products#pdf">
           <div class="card-icon icon-pdf" style="font-size:2rem;">&#128196;</div>
           <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:12px;">PDF Guides & Blueprints</h3>
           <p style="color:var(--slate);font-size:0.9rem;line-height:1.7;flex:1;">Expert-written PDF guides packed with strategies, templates, and step-by-step frameworks. Download once, keep forever, reference anytime.</p>
@@ -164,7 +164,7 @@
     <div class="container" style="text-align:center;">
       <h2 class="section-title" style="max-width:600px;margin:0 auto 20px;">Ready to Build Smarter?</h2>
       <p class="section-sub" style="margin:0 auto 36px;text-align:center;">Explore the full product catalog and find what moves your business forward.</p>
-      <a class="btn-primary" style="font-size:1rem;padding:16px 36px;" href="products.html">See All Products</a>
+      <a class="btn-primary" style="font-size:1rem;padding:16px 36px;" href="/products">See All Products</a>
     </div>
   </section>
 
@@ -180,33 +180,33 @@
       <div class="footer-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="products.html#saas">SaaS Apps</a></li>
-          <li><a href="products.html#pdf">PDF Guides</a></li>
-          <li><a href="web-design.html">Web Design</a></li>
-          <li><a href="products.html">All Products</a></li>
+          <li><a href="/products#saas">SaaS Apps</a></li>
+          <li><a href="/products#pdf">PDF Guides</a></li>
+          <li><a href="/web-design">Web Design</a></li>
+          <li><a href="/products">All Products</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="custom-builds.html">Custom Builds</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/custom-builds">Custom Builds</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms-of-service.html">Terms of Service</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Service</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Driftocity. All rights reserved.</p>
+      <p>&copy; 2026 Driftocity. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="privacy-policy.html">Privacy</a>
-        <a href="terms-of-service.html">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
       </div>
     </div>
   </div>
@@ -214,7 +214,7 @@
 
 <div class="toast" id="toast">&#9989; Message sent! We'll be in touch soon.</div>
 
-<script src="main.js"></script>
-<script src="hero-canvas.js"></script>
+<script src="/main.js"></script>
+<script src="/hero-canvas.js"></script>
 </body>
 </html>
