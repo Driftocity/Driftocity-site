@@ -968,6 +968,17 @@
           </div>
         </article>
 
+        <article class="product-card" data-cat="saas" onclick="showPage('geoclock')" style="cursor:pointer;border-color:rgba(91,78,255,0.35);">
+          <div class="card-badge badge-saas">⚙️ SaaS App</div>
+          <div class="card-icon icon-saas">📍</div>
+          <h2 class="card-title">GeoClock</h2>
+          <p class="card-desc">GPS-verified employee time tracking for field crews. Clock-in only works inside your job site geofence — no buddy punching, no inflated hours. Live timesheets, CSV & PDF payroll export. Flat monthly price, no per-user fees.</p>
+          <div class="card-footer">
+            <div class="card-price">$19.99<small>/mo</small></div>
+            <div class="card-action">See Plans →</div>
+          </div>
+        </article>
+
         <!-- ── PDF Guide Cards ── -->
         <article class="product-card" data-cat="pdf" onclick="window.open('https://buy.stripe.com/7sYdR95De6Lk3p91Sv00008','_blank')" style="cursor:pointer;">
           <div class="card-badge badge-pdf">📄 PDF Guide</div>
@@ -1642,6 +1653,333 @@
 
 
 <!-- ══════════════════════════════════════
+     PAGE: GEOCLOCK
+══════════════════════════════════════ -->
+<div class="page" id="page-geoclock">
+
+  <!-- HERO -->
+  <section style="padding:120px 24px 80px;text-align:center;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:700px;height:700px;background:radial-gradient(circle,rgba(91,78,255,0.13) 0%,transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;top:60px;left:10%;width:300px;height:300px;background:radial-gradient(circle,rgba(91,78,255,0.07) 0%,transparent 70%);pointer-events:none;"></div>
+    <div style="position:absolute;top:80px;right:8%;width:260px;height:260px;background:radial-gradient(circle,rgba(120,60,255,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+    <div style="max-width:800px;margin:0 auto;position:relative;z-index:1;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(91,78,255,0.12);border:1px solid rgba(91,78,255,0.3);border-radius:100px;padding:6px 18px;font-size:0.75rem;font-weight:700;color:var(--indigo2);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:24px;">📍 GPS-Verified Time Tracking</div>
+      <h1 style="font-family:'Syne',sans-serif;font-size:clamp(2.2rem,6vw,4.2rem);font-weight:800;line-height:1.06;letter-spacing:-1.5px;color:var(--white);margin-bottom:22px;">Stop Paying Employees<br>for Hours They <em style="font-style:normal;background:linear-gradient(135deg,var(--indigo) 0%,#A78BFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Weren't There</em></h1>
+      <p style="color:var(--slate);font-size:1.1rem;line-height:1.8;max-width:600px;margin:0 auto 16px;">GeoClock uses GPS to enforce clock-in at your exact job site. If an employee isn't physically inside your geofence, they <strong style="color:var(--ghost);">cannot punch in</strong> — no exceptions, no workarounds, no buddy punching.</p>
+      <p style="color:var(--slate);font-size:1rem;line-height:1.7;max-width:560px;margin:0 auto 40px;">No app to install. Works on any smartphone browser. Live timesheets, CSV and PDF payroll exports, and a clean admin dashboard — all for one flat monthly price with no per-user fees.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn-primary" style="font-size:1rem;padding:15px 36px;" onclick="document.getElementById('geoclock-pricing').scrollIntoView({behavior:'smooth'})">See Plans & Pricing</button>
+        <button class="btn-outline" style="font-size:1rem;padding:15px 32px;" onclick="document.getElementById('geoclock-how').scrollIntoView({behavior:'smooth'})">How It Works</button>
+      </div>
+      <div style="margin-top:20px;font-size:0.82rem;color:var(--slate);">Flat monthly pricing · No per-user fees · No contracts · Cancel anytime</div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS STRIP -->
+  <div style="background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:56px 24px;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px;">
+        <div class="section-label">The Problem</div>
+        <h2 style="font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--white);">Field Crews Cost More Than They Should</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+        <div style="background:rgba(255,60,60,0.05);border:1px solid rgba(255,60,60,0.15);border-radius:14px;padding:24px;">
+          <div style="font-size:1.6rem;margin-bottom:12px;">😤</div>
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);font-size:0.95rem;margin-bottom:8px;">Buddy Punching</h4>
+          <p style="font-size:0.85rem;color:var(--slate);line-height:1.65;">One employee clocks in for another who's late — or not showing up at all. You pay the difference every week.</p>
+        </div>
+        <div style="background:rgba(255,60,60,0.05);border:1px solid rgba(255,60,60,0.15);border-radius:14px;padding:24px;">
+          <div style="font-size:1.6rem;margin-bottom:12px;">🕐</div>
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);font-size:0.95rem;margin-bottom:8px;">Inflated Hours</h4>
+          <p style="font-size:0.85rem;color:var(--slate);line-height:1.65;">Employees clock in from the parking lot, their couch, or before they even leave home. Paper timesheets make it undetectable.</p>
+        </div>
+        <div style="background:rgba(255,60,60,0.05);border:1px solid rgba(255,60,60,0.15);border-radius:14px;padding:24px;">
+          <div style="font-size:1.6rem;margin-bottom:12px;">📋</div>
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);font-size:0.95rem;margin-bottom:8px;">Manual Payroll Hell</h4>
+          <p style="font-size:0.85rem;color:var(--slate);line-height:1.65;">Chasing down paper timesheets, adding hours by hand, fixing errors every pay period. It's a time sink you shouldn't have.</p>
+        </div>
+        <div style="background:rgba(255,60,60,0.05);border:1px solid rgba(255,60,60,0.15);border-radius:14px;padding:24px;">
+          <div style="font-size:1.6rem;margin-bottom:12px;">💸</div>
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);font-size:0.95rem;margin-bottom:8px;">Overpriced Software</h4>
+          <p style="font-size:0.85rem;color:var(--slate);line-height:1.65;">Most time tracking apps charge $5–10 per employee per month. A crew of 10 costs $100/mo just to track time.</p>
+        </div>
+      </div>
+      <!-- Arrow -->
+      <div style="text-align:center;margin:32px 0 0;font-size:2rem;color:var(--indigo);">↓</div>
+      <div style="text-align:center;margin-top:12px;">
+        <div style="display:inline-block;background:rgba(91,78,255,0.12);border:1px solid rgba(91,78,255,0.3);border-radius:12px;padding:16px 32px;">
+          <span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--white);font-size:1.1rem;">GeoClock fixes all four. Flat price. Instant setup. GPS-locked.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="geoclock-how" style="padding:80px 24px;">
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Live in 10 Minutes or Less</h2>
+      <p class="section-sub">No IT department. No hardware. No training sessions. If you can text someone a link, you can run GeoClock.</p>
+      <div class="steps" style="margin-top:48px;">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Create Your Account</h3>
+          <p>Sign up as admin. GeoClock generates your company code and a unique employee clock-in link. Takes about 2 minutes.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Set Your Geofence</h3>
+          <p>Drop a pin on your job site and set your boundary radius. Anyone outside that zone is blocked from clocking in — automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Add Your Employees</h3>
+          <p>Enter your crew's names into the roster. No email addresses needed. They don't create accounts — they just show up on the list.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Text Them the Link</h3>
+          <p>Copy the clock-in link from your dashboard and text it. They open it in their phone browser, pick their name, and tap In. Done.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <h3>Watch the Dashboard</h3>
+          <p>See who's clocked in right now, track live hours, and review time history by employee at any time from your admin panel.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">06</div>
+          <h3>Export for Payroll</h3>
+          <p>When it's time to run payroll, export your timesheet as a CSV or PDF. Clean, organized, ready to hand to your accountant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section style="padding:0 24px 80px;background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:80px 24px;">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything You Need.<br>Nothing You Don't.</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:48px;">
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">🛰️</div>
+          <h3 class="card-title">GPS Geofence Enforcement</h3>
+          <p class="card-desc">You set the boundary — a radius around your job site address. GeoClock checks the employee's GPS the instant they tap clock-in. Outside the fence? Blocked. No override, no workaround.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">📱</div>
+          <h3 class="card-title">No App Required</h3>
+          <p class="card-desc">GeoClock runs entirely in the mobile browser — iPhone or Android. Your crew doesn't download anything, create accounts, or remember passwords. They just open the link and tap their name.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">📊</div>
+          <h3 class="card-title">Live Admin Dashboard</h3>
+          <p class="card-desc">See who's clocked in right now. View total hours per employee. Review clock-in and clock-out times down to the minute. All updated in real time from any device.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">📁</div>
+          <h3 class="card-title">CSV & PDF Payroll Export</h3>
+          <p class="card-desc">When payroll week hits, export your timesheet in one click. CSV for your spreadsheet, PDF to hand to your accountant or bookkeeper. Clean, organized, no manual adding required.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">🔒</div>
+          <h3 class="card-title">Secure Admin Login</h3>
+          <p class="card-desc">Your dashboard is protected by JWT-based authentication. Your employee rosters and time records stay private and accessible only to you as the account owner.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">☁️</div>
+          <h3 class="card-title">Cloud-Based & Always On</h3>
+          <p class="card-desc">GeoClock runs on enterprise-grade cloud infrastructure. No server to manage, no downtime to worry about. It's available 24/7 for your crew whether they're punching in at 5am or 9pm.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">💳</div>
+          <h3 class="card-title">Flat-Price Plans</h3>
+          <p class="card-desc">No per-user fees. No "you hit your limit, upgrade now" surprises mid-payroll. One flat monthly price based on your crew size. Predictable costs, every month.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">⚡</div>
+          <h3 class="card-title">Instant Setup</h3>
+          <p class="card-desc">From sign-up to your first employee clocked in is typically under 10 minutes. No onboarding call, no tutorial to sit through, no configuration wizard. It just works.</p>
+        </div>
+        <div class="product-card" style="cursor:default;">
+          <div style="font-size:1.8rem;margin-bottom:14px;">🏗️</div>
+          <h3 class="card-title">Built for Field Work</h3>
+          <p class="card-desc">Designed for contractors, landscapers, cleaning crews, delivery teams, and anyone whose employees work at a physical location away from an office. This isn't a corporate HR tool.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="geoclock-pricing" style="padding:80px 24px;">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Pick Your Plan.<br>No Surprises.</h2>
+      <p class="section-sub">Flat monthly rate. No per-user fees. No contracts. Cancel any time. All plans include every feature.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:48px;">
+
+        <!-- STARTER -->
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;">
+          <div style="font-family:'Syne',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--slate);margin-bottom:6px;">Starter</div>
+          <div style="font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;color:var(--white);line-height:1;margin-bottom:2px;">$<span id="gc-s-price">19.99</span></div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:6px;">per month</div>
+          <div style="display:inline-block;background:rgba(91,78,255,0.12);color:var(--indigo2);font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:6px;margin-bottom:20px;width:fit-content;">Up to 3 Employees</div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);line-height:1.6;">Perfect for solo operators and small crews just getting started. All the essentials with zero fluff.</div>
+          <div style="display:flex;flex-direction:column;gap:11px;flex:1;margin-bottom:28px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">GPS geofence clock-in</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Live admin dashboard</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">CSV & PDF payroll export</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">No app install needed</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">No per-user fees ever</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Cancel anytime</span></div>
+          </div>
+          <a href="https://buy.stripe.com/aFa3cv9Tu7PocZJcx90000g" target="_blank" style="display:block;background:transparent;color:var(--white);text-align:center;border-radius:12px;padding:13px 24px;font-family:'Inter',sans-serif;font-size:0.9rem;font-weight:600;text-decoration:none;border:1px solid var(--indigo);transition:all .2s;" onmouseover="this.style.background='rgba(91,78,255,0.12)'" onmouseout="this.style.background='transparent'">Get Starter →</a>
+        </div>
+
+        <!-- TEAM -->
+        <div style="background:var(--card-bg);border:2px solid rgba(91,78,255,0.5);border-radius:20px;padding:32px;display:flex;flex-direction:column;position:relative;overflow:hidden;box-shadow:0 0 60px rgba(91,78,255,0.12);">
+          <div style="position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(91,78,255,0.2) 0%,transparent 70%);pointer-events:none;"></div>
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px;">
+            <div style="font-family:'Syne',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--indigo2);">Team</div>
+            <div style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.3);border-radius:100px;padding:3px 10px;font-size:0.68rem;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:0.06em;">🔥 Most Popular</div>
+          </div>
+          <div style="font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;color:var(--white);line-height:1;margin-bottom:2px;">$<span id="gc-t-price">39.99</span></div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:6px;">per month</div>
+          <div style="display:inline-block;background:rgba(91,78,255,0.15);color:var(--indigo2);font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:6px;margin-bottom:20px;width:fit-content;">Up to 10 Employees</div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);line-height:1.6;">For growing crews that need room to expand — same flat price regardless of headcount up to 10, no per-seat surprises.</div>
+          <div style="display:flex;flex-direction:column;gap:11px;flex:1;margin-bottom:28px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Everything in Starter</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);"><strong style="color:var(--white);">Up to 10 employees</strong></span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Add employees as you hire</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Flat price stays the same</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">GPS & payroll export included</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Cancel anytime</span></div>
+          </div>
+          <a href="https://buy.stripe.com/8x2bJ17Lm1r08Jt8gT0000h" target="_blank" style="display:block;background:var(--indigo);color:var(--white);text-align:center;border-radius:12px;padding:14px 24px;font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:700;text-decoration:none;transition:all .2s;box-shadow:0 4px 20px rgba(91,78,255,0.3);" onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 32px rgba(91,78,255,0.45)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(91,78,255,0.3)'">Get Team →</a>
+        </div>
+
+        <!-- CREW -->
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:20px;padding:32px;display:flex;flex-direction:column;">
+          <div style="font-family:'Syne',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--slate);margin-bottom:6px;">Crew</div>
+          <div style="font-family:'Syne',sans-serif;font-size:2.6rem;font-weight:800;color:var(--white);line-height:1;margin-bottom:2px;">$<span id="gc-c-price">59.99</span></div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:6px;">per month</div>
+          <div style="display:inline-block;background:rgba(91,78,255,0.12);color:var(--indigo2);font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:6px;margin-bottom:20px;width:fit-content;">Up to 15 Employees</div>
+          <div style="font-size:0.82rem;color:var(--slate);margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--border);line-height:1.6;">For larger field teams, retail crews, and multi-site operations. Geofencing included — not an upsell.</div>
+          <div style="display:flex;flex-direction:column;gap:11px;flex:1;margin-bottom:28px;">
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Everything in Team</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);"><strong style="color:var(--white);">Up to 15 employees</strong></span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Multi-site ready</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Best value per employee</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Geofencing never an upsell</span></div>
+            <div style="display:flex;gap:10px;align-items:flex-start;"><span style="color:#7FD67F;flex-shrink:0;">✓</span><span style="font-size:0.875rem;color:var(--ghost);">Cancel anytime</span></div>
+          </div>
+          <a href="https://buy.stripe.com/14AcN54zab1A9Nx8gT0000i" target="_blank" style="display:block;background:transparent;color:var(--white);text-align:center;border-radius:12px;padding:13px 24px;font-family:'Inter',sans-serif;font-size:0.9rem;font-weight:600;text-decoration:none;border:1px solid var(--indigo);transition:all .2s;" onmouseover="this.style.background='rgba(91,78,255,0.12)'" onmouseout="this.style.background='transparent'">Get Crew →</a>
+        </div>
+
+      </div>
+
+      <!-- VALUE COMPARE -->
+      <div style="margin-top:40px;background:rgba(91,78,255,0.07);border:1px solid rgba(91,78,255,0.2);border-radius:16px;padding:28px 32px;">
+        <div style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);font-size:1rem;margin-bottom:16px;">💡 Compare the real cost</div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
+          <div>
+            <div style="font-size:0.8rem;color:var(--slate);margin-bottom:4px;">Other apps (per-user pricing)</div>
+            <div style="font-family:'Syne',sans-serif;font-weight:800;color:#FF6B6B;font-size:1.3rem;">$5–10 / employee / month</div>
+            <div style="font-size:0.78rem;color:var(--slate);margin-top:2px;">10 employees = $50–100/mo</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem;color:var(--slate);margin-bottom:4px;">GeoClock Team (10 employees)</div>
+            <div style="font-family:'Syne',sans-serif;font-weight:800;color:#7FD67F;font-size:1.3rem;">$39.99 flat / month</div>
+            <div style="font-size:0.78rem;color:var(--slate);margin-top:2px;">That's $4.00/employee/month</div>
+          </div>
+          <div>
+            <div style="font-size:0.8rem;color:var(--slate);margin-bottom:4px;">You save per month</div>
+            <div style="font-family:'Syne',sans-serif;font-weight:800;color:var(--amber);font-size:1.3rem;">$40–90 every month</div>
+            <div style="font-size:0.78rem;color:var(--slate);margin-top:2px;">$480–1,080 per year</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:20px;text-align:center;font-size:0.85rem;color:var(--slate);">All plans include every feature. No hidden fees. Questions? Call Raymond at <a href="tel:7655531097" style="color:var(--indigo2);text-decoration:none;font-weight:600;">(765) 553-1097</a></div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section style="padding:80px 24px;background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-label">Who It's For</div>
+      <h2 class="section-title">If Your Crew Works in the Field,<br>GeoClock Was Built for You</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:40px;">
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🏗️</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">General Contractors</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🌳</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Landscaping Crews</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🔧</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Plumbing & HVAC</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🏠</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Roofing & Siding</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🚚</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Delivery & Logistics</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🧹</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Cleaning Services</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🏪</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Retail & Storefronts</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">⚡</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Electricians</span></div>
+        <div style="background:var(--navy);border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:12px;"><span style="font-size:1.4rem;">🏗️</span><span style="font-size:0.88rem;font-weight:600;color:var(--ghost);">Any Field-Based Business</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding:80px 24px;">
+    <div class="container" style="max-width:780px;">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Answers to the Questions<br>You're Already Thinking</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;margin-top:40px;">
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">Do my employees need to download an app?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">No. GeoClock runs in any mobile browser — Chrome, Safari, Firefox. Your crew opens the link you text them, picks their name, and taps In. No app store, no download, no login required for them.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">What actually stops buddy punching?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">The GPS check runs server-side the moment someone taps clock-in. Their device reports its location, and GeoClock compares it to your geofence coordinates. If they're outside the boundary you set, the request is rejected entirely — not flagged, blocked. The only way to clock in is to physically be there.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">What if my employee turns off their GPS?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">If location access is denied or GPS is off, GeoClock can't verify their position — and without verification, clock-in is blocked. Employees need to have location enabled in their browser to use the app. This actually makes it more secure, not less.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">How does CSV/PDF export work?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">From your admin dashboard, choose the date range and employee, then hit Export. GeoClock generates a clean timesheet with employee name, date, clock-in time, clock-out time, and total hours. Download as CSV for Excel/Google Sheets or PDF to hand straight to your accountant.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">Can I change plans as my crew grows?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">Yes. Start on Starter with 3 employees, upgrade to Team when you hire more. Your data carries over. You're never locked in — cancel, upgrade, or downgrade any time with no penalty.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">Is my business data secure?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">Yes. Admin access is protected with JWT authentication. Your employee data, time records, and account information are stored in a private cloud database accessible only through your admin login. Payments are processed by Stripe — we never see or store your card information.</p>
+        </div>
+        <div style="background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;">
+          <h4 style="font-family:'Syne',sans-serif;font-weight:700;color:var(--white);margin-bottom:8px;">What if I have more than 15 employees?</h4>
+          <p style="font-size:0.875rem;color:var(--slate);line-height:1.7;">Reach out directly and we'll talk. We can build a custom plan or a fully custom version of GeoClock scoped to your exact operation. Call or text Raymond at <a href="tel:7655531097" style="color:var(--indigo2);text-decoration:none;">(765) 553-1097</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="padding:80px 24px;background:var(--card-bg);border-top:1px solid var(--border);">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" style="max-width:580px;margin:0 auto 16px;">Your Crew. Your Job Site.<br>Your Clock.</h2>
+      <p class="section-sub" style="margin:0 auto 36px;text-align:center;">Stop losing money to inflated timesheets and buddy punching. GeoClock pays for itself in the first payroll period.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px;">
+        <a href="https://buy.stripe.com/aFa3cv9Tu7PocZJcx90000g" target="_blank" class="btn-outline" style="font-size:0.95rem;padding:14px 28px;text-decoration:none;">Starter — $19.99/mo</a>
+        <a href="https://buy.stripe.com/8x2bJ17Lm1r08Jt8gT0000h" target="_blank" class="btn-primary" style="font-size:1rem;padding:14px 32px;text-decoration:none;">Team — $39.99/mo ⭐</a>
+        <a href="https://buy.stripe.com/14AcN54zab1A9Nx8gT0000i" target="_blank" class="btn-outline" style="font-size:0.95rem;padding:14px 28px;text-decoration:none;">Crew — $59.99/mo</a>
+      </div>
+      <div style="font-size:0.8rem;color:var(--slate);">No contracts · Cancel anytime · Questions? <a href="tel:7655531097" style="color:var(--indigo2);text-decoration:none;">(765) 553-1097</a> or <a onclick="showPage('contact')" style="color:var(--indigo2);cursor:pointer;text-decoration:underline;">send a message</a></div>
+    </div>
+  </section>
+
+</div><!-- /page-geoclock -->
+
+
+<!-- ══════════════════════════════════════
      PAGE: BLOG
 ══════════════════════════════════════ -->
 <div class="page" id="page-blog">
@@ -1787,6 +2125,7 @@
         <h4>Products</h4>
         <ul>
           <li><a onclick="showPage('products');filterCat('saas')">SaaS Apps</a></li>
+          <li><a onclick="showPage('geoclock')">GeoClock</a></li>
           <li><a onclick="showPage('products');filterCat('pdf')">PDF Guides</a></li>
           <li><a onclick="showPage('webdesign')">Web Design</a></li>
           <li><a onclick="showPage('products')">All Products</a></li>
@@ -1822,8 +2161,18 @@
 <div class="toast" id="toast">✅ Message sent! We'll be in touch soon.</div>
 
 <script>
+/* ── URL PARAMETER ROUTING ── */
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const p = params.get('page');
+  const validPages = ['home','products','custom','webdesign','geoclock','blog','about','contact','privacy','terms'];
+  if (p && validPages.includes(p)) {
+    showPage(p);
+  }
+})();
+
 /* ── ROUTER ── */
-const pages = ['home','products','custom','webdesign','blog','about','contact','privacy','terms'];
+const pages = ['home','products','custom','webdesign','geoclock','blog','about','contact','privacy','terms'];
 
 function showPage(name) {
   // close post overlay if open
