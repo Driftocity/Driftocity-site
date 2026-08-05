@@ -1,67 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://driftocity.com/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <!-- Main site -->
+  <url><loc>https://driftocity.com/</loc><lastmod>2025-07-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 
-  <url>
-    <loc>https://driftocity.com/blog/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Product & service pages -->
+  <url><loc>https://driftocity.com/geoclock/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://driftocity.com/webdesign/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://driftocity.com/custom/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://driftocity.com/products/</loc><lastmod>2025-07-01</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/ai-mastery-blueprint/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/estimatepro/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://driftocity.com/launchmind/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://driftocity.com/tradeai/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <url>
-    <loc>https://driftocity.com/blog/10-ai-tools-small-business-2025/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Company pages -->
+  <url><loc>https://driftocity.com/about/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://driftocity.com/contact/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-  <url>
-    <loc>https://driftocity.com/blog/website-costing-you-customers/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://driftocity.com/blog/google-business-profile-setup-contractors/</loc>
-    <lastmod>2025-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://driftocity.com/blog/chatgpt-prompts-contractors/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://driftocity.com/blog/what-is-custom-saas-app/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://driftocity.com/blog/get-found-google-without-ads/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://driftocity.com/blog/100-vs-5000-website/</loc>
-    <lastmod>2025-07-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Blog -->
+  <url><loc>https://driftocity.com/blog/</loc><lastmod>2025-07-01</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://driftocity.com/blog/10-ai-tools-small-business-2025/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/website-costing-you-customers/</loc><lastmod>2025-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/google-business-profile-setup-contractors/</loc><lastmod>2025-06-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/chatgpt-prompts-contractors/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/what-is-custom-saas-app/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/get-found-google-without-ads/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://driftocity.com/blog/100-vs-5000-website/</loc><lastmod>2025-07-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>
