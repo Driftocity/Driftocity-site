@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Driftocity – Digital Products, SaaS Tools &amp; AI Guides</title>
+  <meta name="description" content="Premium digital products for entrepreneurs. AI SaaS tools, custom builds, web design, and PDF guides."/>
+  <meta name="author" content="Raymond Hockersmith"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://driftocity.com/"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Driftocity – Digital Products, SaaS Tools &amp; AI Guides"/>
+  <meta property="og:description" content="Premium digital products for entrepreneurs. AI SaaS tools, custom builds, web design, and PDF guides."/>
+  <meta property="og:url" content="https://driftocity.com/"/>
+  <meta property="og:image" content="https://driftocity.com/og-social.png"/>
+  <meta property="og:site_name" content="Driftocity"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Driftocity – Digital Products, SaaS Tools &amp; AI Guides"/>
+  <meta name="twitter:description" content="Premium digital products for entrepreneurs. AI SaaS tools, custom builds, web design, and PDF guides."/>
+  <meta name="twitter:image" content="https://driftocity.com/og-social.png"/>
+  <meta name="google-site-verification" content="Dre9t1zJC2OEuHTLApjvAie4GcGGAR0snZ1095nAup0"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Driftocity \u2013 Digital Products, SaaS Tools & AI Guides","description":"Premium digital products for entrepreneurs. AI SaaS tools, custom builds, web design, and PDF guides.","url":"https://driftocity.com/","publisher":{"@type":"Organization","name":"Driftocity","url":"https://driftocity.com"}}</script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYT4R5NK96"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HYT4R5NK96');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0A0E1A;
+      --navy2:   #111827;
+      --indigo:  #5B4EFF;
+      --indigo2: #7B6FFF;
+      --ghost:   #F0F2FF;
+      --slate:   #8892A4;
+      --amber:   #F5A623;
+      --white:   #FFFFFF;
+      --card-bg: #131929;
+      --border:  rgba(91,78,255,0.18);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--ghost);
+      line-height: 1.6;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ── PAGE ROUTER ── */
+    .page { display: none; }
+    .page.active { display: block; flex: 1; }
+
+    /* ── FOOTER ALWAYS AT BOTTOM ── */
+    body > footer { margin-top: auto; }
+    .page { display: block !important; }
+  </style>
+</head>
+<body>
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-logo" onclick="window.location='/'">Drift<span>ocity</span></div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/products/">Products</a></li>
+    <li><a href="/custom/">Custom Builds</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/contact/">Contact</a></li>
+    <li><a href="/custom/" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+<main>
+
+      <section class="hero" aria-label="Hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Premium Digital Products</div>
+      <h1>Tools &amp; Knowledge<br>Built to <em>Move Fast</em></h1>
+      <p class="hero-sub">
+        Driftocity makes AI-powered SaaS tools and expert PDF guides that help entrepreneurs, contractors, and business owners work smarter — without the overhead.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="window.location='/products/'">Explore Products</button>
+        <button class="btn-outline" onclick="window.location='/about/'">Our Story</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-label">Product Categories</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Digital Delivery</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">AI<span>↑</span></div>
+          <div class="stat-label">Powered Tools</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">24<span>/7</span></div>
+          <div class="stat-label">Instant Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="ti">⚡</span> Instant digital delivery</div>
+      <div class="trust-item"><span class="ti">🔒</span> Secure checkout</div>
+      <div class="trust-item"><span class="ti">🤖</span> AI-powered tools</div>
+      <div class="trust-item"><span class="ti">📱</span> Mobile compatible</div>
+      <div class="trust-item"><span class="ti">♾️</span> Lifetime access</div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES PREVIEW -->
+  <section>
+    <div class="container">
+      <div class="section-label">What We Sell</div>
+      <h2 class="section-title">Two Ways to Level Up</h2>
+      <p class="section-sub">From full SaaS tools you can run in your browser to deep-dive PDF guides you can reference forever.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:48px;">
+        <div class="product-card" onclick="window.location='/products/'">
+          <div class="card-icon icon-saas" style="font-size:2rem;">🛠️</div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:12px;">SaaS Apps &amp; Tools</h3>
+          <p style="color:var(--slate);font-size:0.9rem;line-height:1.7;flex:1;">AI-powered web applications you access immediately. Automate workflows, generate business plans, estimate projects, and more — no installs, no contracts.</p>
+          <div style="margin-top:24px;color:var(--indigo2);font-size:0.85rem;font-weight:600;">Browse Apps →</div>
+        </div>
+        <div class="product-card" onclick="window.location='/products/'">
+          <div class="card-icon icon-pdf" style="font-size:2rem;">📄</div>
+          <h3 style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:var(--white);margin-bottom:12px;">PDF Guides &amp; Blueprints</h3>
+          <p style="color:var(--slate);font-size:0.9rem;line-height:1.7;flex:1;">Expert-written PDF guides packed with strategies, templates, and step-by-step frameworks. Download once, keep forever, reference anytime.</p>
+          <div style="margin-top:24px;color:var(--amber);font-size:0.85rem;font-weight:600;">Browse Guides →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section style="background:var(--card-bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-label">Process</div>
+      <h2 class="section-title">Zero Friction, Zero Wait</h2>
+      <p class="section-sub">Every product is designed to get out of your way so you can get to work.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Browse &amp; Choose</h3>
+          <p>Find the tool or guide that fits your need. Clear descriptions, honest pricing — no surprises.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Secure Checkout</h3>
+          <p>Pay once via our secure payment processor. No subscriptions unless you want them.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Instant Access</h3>
+          <p>SaaS tools launch immediately. PDF guides download instantly. Start using in seconds.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h3>Keep It Forever</h3>
+          <p>Lifetime access to everything you buy. No expiration dates, no resubscription required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section>
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title" style="max-width:600px;margin:0 auto 20px;">Ready to Build Smarter?</h2>
+      <p class="section-sub" style="margin:0 auto 36px;text-align:center;">Explore the full product catalog and find what moves your business forward.</p>
+      <button class="btn-primary" style="font-size:1rem;padding:16px 36px;" onclick="window.location='/products/'">See All Products</button>
+    </div>
+  </section>
+</main>
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">Drift<span>ocity</span></div>
+        <p>Premium digital products for entrepreneurs and builders. AI tools, SaaS apps, and expert guides — delivered instantly.</p>
+        <a href="mailto:driftocity2@gmail.com" class="footer-email">driftocity2@gmail.com</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/products/">SaaS Apps</a></li>
+          <li><a href="/geoclock/">GeoClock</a></li>
+          <li><a href="/products/">PDF Guides</a></li>
+          <li><a href="/webdesign/">Web Design</a></li>
+          <li><a href="/products/">All Products</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/custom/">Custom Builds</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Driftocity. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+
+(function() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const c = document.getElementById('heroCanvas');
+    if(c) c.style.display = 'none';
+    return;
+  }
+  const canvas = document.getElementById('heroCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  let mouse = { x: -999, y: -999 };
+  let t = 0;
+  function resize() { W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; buildGrid(); }
+  const CELL = 38;
+  let gridDots = [];
+  function buildGrid() { gridDots = []; const cols = Math.ceil(W/CELL)+1; const rows = Math.ceil(H/CELL)+1; for(let r=0;r<rows;r++){for(let c=0;c<cols;c++){gridDots.push({bx:c*CELL,by:r*CELL,phase:Math.random()*Math.PI*2,speed:0.004+Math.random()*0.006,size:1+Math.random()*0.8});}}}
+  function drawGrid(){gridDots.forEach(d=>{const breathe=0.5+0.5*Math.sin(t*d.speed*60+d.phase);const dx=d.bx-mouse.x;const dy=d.by-mouse.y;const dist=Math.sqrt(dx*dx+dy*dy);const mGlow=dist<140?(1-dist/140)*0.7:0;const alpha=0.06+breathe*0.10+mGlow;const r=Math.round(91+mGlow*60);const g=Math.round(78+mGlow*20);const b=255;ctx.beginPath();ctx.arc(d.bx,d.by,d.size+mGlow*1.5,0,Math.PI*2);ctx.fillStyle=`rgba(${r},${g},${b},${alpha})`;ctx.fill();});}
+  const ORBS=[{x:0.20,y:0.30,r:0.28,c:'91,78,255',spd:0.00012,phase:0.0},{x:0.78,y:0.55,r:0.22,c:'120,60,255',spd:0.00009,phase:1.8},{x:0.50,y:0.85,r:0.18,c:'60,100,255',spd:0.00015,phase:3.4}];
+  function drawOrbs(){ORBS.forEach(o=>{const cx=(o.x+Math.sin(t*o.spd*1000+o.phase)*0.06)*W;const cy=(o.y+Math.cos(t*o.spd*800+o.phase)*0.04)*H;const rad=o.r*Math.min(W,H);const g=ctx.createRadialGradient(cx,cy,0,cx,cy,rad);g.addColorStop(0,`rgba(${o.c},0.13)`);g.addColorStop(0.5,`rgba(${o.c},0.05)`);g.addColorStop(1,`rgba(${o.c},0)`);ctx.beginPath();ctx.arc(cx,cy,rad,0,Math.PI*2);ctx.fillStyle=g;ctx.fill();});}
+  let streaks=[];function spawnStreak(){const fromLeft=Math.random()>0.5;streaks.push({x:fromLeft?-60:W+60,y:Math.random()*H*0.7,len:60+Math.random()*100,spd:(1.2+Math.random()*1.6)*(fromLeft?1:-1),alpha:0.5+Math.random()*0.4,width:0.6+Math.random()*0.8,life:1});}
+  let nextStreak=0;function drawStreaks(now){if(now>nextStreak){spawnStreak();nextStreak=now+1200+Math.random()*2400;}streaks=streaks.filter(s=>s.life>0);streaks.forEach(s=>{s.x+=s.spd*2.5;s.life-=0.012;const fade=s.life*s.alpha;const x2=s.x-s.len*Math.sign(s.spd);const g=ctx.createLinearGradient(s.x,s.y,x2,s.y);g.addColorStop(0,`rgba(180,160,255,0)`);g.addColorStop(0.3,`rgba(180,160,255,${fade*0.9})`);g.addColorStop(1,`rgba(120,100,255,0)`);ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(x2,s.y);ctx.strokeStyle=g;ctx.lineWidth=s.width;ctx.stroke();ctx.beginPath();ctx.arc(s.x,s.y,s.width*1.2,0,Math.PI*2);ctx.fillStyle=`rgba(220,210,255,${fade*0.8})`;ctx.fill();});}
+  let ripples=[];canvas.parentElement.addEventListener('mousemove',e=>{const rect=canvas.getBoundingClientRect();mouse.x=e.clientX-rect.left;mouse.y=e.clientY-rect.top;});canvas.parentElement.addEventListener('mouseleave',()=>{mouse.x=-999;mouse.y=-999;});canvas.parentElement.addEventListener('click',e=>{const rect=canvas.getBoundingClientRect();ripples.push({x:e.clientX-rect.left,y:e.clientY-rect.top,r:0,life:1});});
+  function drawRipples(){ripples=ripples.filter(r=>r.life>0);ripples.forEach(r=>{r.r+=4;r.life-=0.025;ctx.beginPath();ctx.arc(r.x,r.y,r.r,0,Math.PI*2);ctx.strokeStyle=`rgba(160,140,255,${r.life*0.5})`;ctx.lineWidth=1;ctx.stroke();});}
+  let lastTime=0;function loop(now){const dt=now-lastTime;lastTime=now;t+=dt*0.001;ctx.clearRect(0,0,W,H);drawOrbs();drawGrid();drawStreaks(now);drawRipples();requestAnimationFrame(loop);}
+  window.addEventListener('resize',resize);
+  resize();
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
