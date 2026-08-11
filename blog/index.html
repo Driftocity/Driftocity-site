@@ -1,196 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYT4R5NK96"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-HYT4R5NK96');</script>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Blog | AI Tools, Web Design & Business Tips | Driftocity</title>
-  <meta name="description" content="Practical insights on AI tools, web design, growing a business online, and building SaaS — from the team at Driftocity."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog – AI, Business &amp; Web Design Tips | Driftocity</title>
+  <meta name="description" content="Practical insights on AI tools, web design, and growing a business online. Written by Raymond Hockersmith at Driftocity."/>
   <meta name="author" content="Raymond Hockersmith"/>
   <meta name="robots" content="index, follow"/>
   <link rel="canonical" href="https://driftocity.com/blog/"/>
-  https://driftocity.com/blog/"/>
-    <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Driftocity Blog — AI Tools, Web Design & Business Tips"/>
-  <meta property="og:description" content="Practical insights on AI tools, web design, and growing a business online — from Raymond Hockersmith at Driftocity."/>
-  <meta property="og:url" content="https://driftocity.com/blog/"/>
-  <meta property="og:site_name" content="Driftocity"/>
+  <meta property="og:title" content="Blog | Driftocity"/>
+  <meta property="og:description" content="AI tools, web design, and business growth tips from Driftocity."/>
   <meta property="og:image" content="https://driftocity.com/og-social.png"/>
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-  <meta property="og:image:alt" content="Driftocity Blog — AI Tools, Web Design & Business Tips | Driftocity"/>
+  <meta property="og:url" content="https://driftocity.com/blog/"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Driftocity Blog — AI Tools, Web Design & Business Tips"/>
-  <meta name="twitter:description" content="Practical insights on AI tools, web design, and growing a business online — from Raymond Hockersmith at Driftocity."/>
-  <meta name="twitter:image" content="https://driftocity.com/og-social.png"/>
-  <meta name="twitter:site" content="@driftocity"/>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Blog",
-    "name":"Driftocity Blog",
-    "url":"https://driftocity.com/blog/",
-    "description":"AI tools, web design, and business growth tips from Driftocity.",
-    "publisher":{"@type":"Organization","name":"Driftocity","url":"https://driftocity.com"}
-  }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--navy:#0A0E1A;--navy2:#111827;--indigo:#5B4EFF;--indigo2:#7B6FFF;--ghost:#F0F2FF;--slate:#8892A4;--amber:#F5A623;--white:#FFFFFF;--card-bg:#131929;--border:rgba(91,78,255,0.18)}
-    html{scroll-behavior:smooth}
-    body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ghost);line-height:1.6;overflow-x:hidden;display:flex;flex-direction:column;min-height:100vh}
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--navy:#0A0E1A;--navy2:#111827;--indigo:#5B4EFF;--indigo2:#7B6FFF;--ghost:#F0F2FF;--slate:#8892A4;--amber:#F5A623;--card-bg:#131929;--border:rgba(91,78,255,0.18)}
+    body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ghost);line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
     nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,14,26,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;color:var(--white);text-decoration:none;letter-spacing:-0.5px}
+    .nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;text-decoration:none}
     .nav-logo span{color:var(--indigo)}
     .nav-links{display:flex;gap:8px;list-style:none}
-    .nav-links a{color:var(--slate);text-decoration:none;font-size:0.875rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:color .2s,background .2s}
-    .nav-links a:hover,.nav-links a.active{color:var(--white);background:rgba(91,78,255,0.12)}
-    .nav-cta{background:var(--indigo)!important;color:var(--white)!important;border-radius:8px!important;padding:8px 16px!important}
-    .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none;border-radius:8px}
-    .hamburger span{display:block;width:22px;height:2px;background:var(--ghost);border-radius:2px;transition:transform .3s,opacity .3s;transform-origin:center}
+    .nav-links a{color:var(--slate);text-decoration:none;font-size:0.875rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:all 0.2s}
+    .nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(91,78,255,0.12)}
+    .nav-cta{background:var(--indigo)!important;color:#fff!important;border-radius:8px!important;padding:8px 16px!important}
+    .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+    .hamburger span{display:block;width:22px;height:2px;background:var(--ghost);border-radius:2px;transition:all 0.3s;transform-origin:center}
     .hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .hamburger.open span:nth-child(2){opacity:0}
     .hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-    @media(max-width:720px){
-      .hamburger{display:flex}
-      .nav-links{display:none;position:fixed;top:64px;left:0;right:0;background:var(--navy2);flex-direction:column;padding:16px 24px 24px;border-bottom:1px solid var(--border);gap:4px;z-index:999}
-      .nav-links.open{display:flex}
-      .nav-links a{font-size:1rem;padding:10px 12px}
-    }
+    @media(max-width:720px){.hamburger{display:flex}.nav-links{display:none;position:fixed;top:64px;left:0;right:0;background:var(--navy2);flex-direction:column;padding:16px 24px 24px;border-bottom:1px solid var(--border);gap:4px;z-index:999}.nav-links.open{display:flex}}
     main{flex:1;padding:100px 24px 80px;max-width:1100px;margin:0 auto;width:100%}
-    .section-label{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--indigo2);margin-bottom:12px}
-    .section-title{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:var(--white);line-height:1.15;letter-spacing:-0.5px;margin-bottom:16px}
-    .section-sub{color:var(--slate);font-size:1.05rem;max-width:520px;line-height:1.7;margin-bottom:40px}
-    .filter-tabs{display:flex;gap:8px;margin-bottom:40px;flex-wrap:wrap}
-    .filter-tab{padding:9px 18px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--slate);font-family:'Inter',sans-serif;font-size:0.875rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none}
-    .filter-tab:hover,.filter-tab.active{background:var(--indigo);border-color:var(--indigo);color:var(--white)}
-    .featured-post{background:var(--card-bg);border:1px solid rgba(91,78,255,0.35);border-radius:20px;padding:40px;margin-bottom:36px;text-decoration:none;display:block;transition:all .2s;position:relative;overflow:hidden}
-    .featured-post:hover{border-color:rgba(91,78,255,0.6);transform:translateY(-2px)}
-    .featured-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:100px;padding:5px 14px;font-size:0.72rem;font-weight:700;color:var(--amber);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px}
-    .post-cat-tag{background:rgba(91,78,255,0.15);color:var(--indigo2);font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:4px 10px;border-radius:6px;display:inline-block}
+    h1{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;margin-bottom:12px}
+    .sub{color:var(--slate);font-size:1rem;margin-bottom:36px}
+    .cat-tabs{display:flex;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+    .cat-tab{padding:7px 16px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--slate);font-size:0.8rem;font-weight:600;cursor:pointer;transition:all 0.2s}
+    .cat-tab.active,.cat-tab:hover{background:var(--indigo);border-color:var(--indigo);color:#fff}
     .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
-    .blog-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:28px;text-decoration:none;display:flex;flex-direction:column;transition:all .2s}
-    .blog-card:hover{border-color:rgba(91,78,255,0.4);transform:translateY(-3px)}
-    .card-title{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:var(--white);line-height:1.3;margin:12px 0 10px}
-    .card-desc{font-size:0.855rem;color:var(--slate);line-height:1.7;flex:1;margin-bottom:20px}
-    .card-footer-row{display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid rgba(255,255,255,0.05)}
-    .card-meta{font-size:0.8rem;color:var(--slate)}
-    .card-read{font-size:0.8rem;font-weight:600;color:var(--indigo2)}
+    .post-card{background:var(--card-bg);border:1px solid var(--border);border-radius:16px;padding:28px;display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:all 0.2s}
+    .post-card:hover{transform:translateY(-4px);border-color:rgba(91,78,255,0.45);box-shadow:0 12px 40px rgba(91,78,255,0.1)}
+    .post-cat{font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--indigo2);margin-bottom:12px}
+    .post-title{font-family:'Syne',sans-serif;font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:10px;line-height:1.4}
+    .post-desc{font-size:0.85rem;color:var(--slate);line-height:1.65;flex:1}
+    .post-meta{font-size:0.78rem;color:var(--slate);margin-top:18px;opacity:0.7}
+    .hidden{display:none!important}
     footer{background:var(--navy2);border-top:1px solid var(--border);padding:48px 24px 28px;margin-top:auto}
-    .footer-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
-    .footer-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:var(--white)}
-    .footer-logo span{color:var(--indigo)}
-    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
-    .footer-links a{font-size:0.8rem;color:var(--slate);text-decoration:none}
-    .footer-links a:hover{color:var(--white)}
-    .footer-copy{font-size:0.8rem;color:var(--slate);width:100%;text-align:center;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
+    .fi{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .fl{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff}.fl span{color:var(--indigo)}
+    .flinks{display:flex;gap:20px;flex-wrap:wrap}.flinks a{font-size:0.8rem;color:var(--slate);text-decoration:none}.flinks a:hover{color:#fff}
+    .fc{font-size:0.8rem;color:var(--slate);width:100%;text-align:center;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
   </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Driftocity","url":"https://driftocity.com","logo":"https://driftocity.com/og-social.png","contactPoint":{"@type":"ContactPoint","telephone":"+17655531097","contactType":"customer service"},"sameAs":[]}</script>
 </head>
 <body>
-
-<nav role="navigation">
-  <a class="nav-logo" href="/"><span>Drift</span>ocity</a>
-  <button class="hamburger" id="hbg" onclick="this.classList.toggle('open');document.getElementById('nl').classList.toggle('open')" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+<nav>
+  <a class="nav-logo" href="/">Drift<span>ocity</span></a>
+  <button class="hamburger" id="hbg" onclick="this.classList.toggle('open');document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></button>
   <ul class="nav-links" id="nl">
-    <li><a href="/">Home</a></li>
-    <li><a href="/#products">Products</a></li>
-    <li><a href="/blog/" class="active">Blog</a></li>
-    <li><a href="/#about">About</a></li>
-    <li><a href="/#contact">Contact</a></li>
-    <li><a href="/#custom" class="nav-cta">Get a Quote</a></li>
+    <li><a href="/">Home</a></li><li><a href="/products/">Products</a></li>
+    <li><a href="/custom/">Custom Builds</a></li><li><a href="/blog/" class="active">Blog</a></li>
+    <li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li>
+    <li><a href="/custom/" class="nav-cta">Get a Quote</a></li>
   </ul>
 </nav>
-
 <main>
-  <div class="section-label">Driftocity Blog</div>
-  <h1 class="section-title">AI, Business & Web Design</h1>
-  <p class="section-sub">Practical insights on AI tools, growing a business online, web design, and building SaaS — from Raymond Hockersmith at Driftocity.</p>
-
-  <div class="filter-tabs">
-    <a class="filter-tab active" href="/blog/">All Posts</a>
-    <a class="filter-tab" href="/blog/?cat=ai">🤖 AI & Tools</a>
-    <a class="filter-tab" href="/blog/?cat=web">🌐 Web Design</a>
-    <a class="filter-tab" href="/blog/?cat=business">💼 Business</a>
-    <a class="filter-tab" href="/blog/?cat=saas">⚙️ SaaS</a>
+  <h1>The Driftocity Blog</h1>
+  <p class="sub">AI tools, web design, and business growth &mdash; practical stuff that actually helps.</p>
+  <div class="cat-tabs">
+    <button class="cat-tab active" onclick="filterBlog('all')">All Posts</button>
+    <button class="cat-tab" onclick="filterBlog('ai')">AI &amp; Automation</button>
+    <button class="cat-tab" onclick="filterBlog('web')">Web Design</button>
+    <button class="cat-tab" onclick="filterBlog('business')">Business</button>
   </div>
-
-  <!-- FEATURED -->
-  <a class="featured-post" href="/blog/10-ai-tools-small-business-2025/">
-    <div class="featured-badge">⭐ Featured</div>
-    <div style="display:flex;gap:12px;align-items:center;margin-bottom:14px;flex-wrap:wrap;">
-      <span class="post-cat-tag">🤖 AI & Tools</span>
-      <span style="font-size:0.82rem;color:var(--slate);">July 2025 · 8 min read</span>
-    </div>
-    <h2 style="font-family:'Syne',sans-serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:800;color:var(--white);line-height:1.2;margin-bottom:14px;">10 AI Tools Every Small Business Owner Should Be Using in 2025</h2>
-    <p style="color:var(--slate);font-size:0.95rem;line-height:1.75;max-width:680px;margin-bottom:20px;">Most small business owners are leaving serious time and money on the table by not using AI. These 10 tools are free or cheap, easy to set up, and will change how you run your business.</p>
-    <div style="color:var(--indigo2);font-size:0.875rem;font-weight:600;">Read Article →</div>
-  </a>
-
-  <!-- GRID -->
-  <div class="blog-grid">
-
-    <a class="blog-card" href="/blog/website-costing-you-customers/">
-      <span class="post-cat-tag">🌐 Web Design</span>
-      <h3 class="card-title">Why Your Small Business Website Is Costing You Customers (And How to Fix It)</h3>
-      <p class="card-desc">A slow, outdated, or non-mobile site is quietly turning away customers every single day. Here's what to look for and how to fix it fast.</p>
-      <div class="card-footer-row"><span class="card-meta">June 2025 · 5 min</span><span class="card-read">Read →</span></div>
+  <div class="blog-grid" id="blogGrid">
+    <a class="post-card" href="/blog/10-ai-tools-small-business-2025.html" data-cat="ai">
+      <div class="post-cat">AI &amp; Automation</div>
+      <div class="post-title">10 AI Tools Every Small Business Owner Should Be Using in 2025</div>
+      <div class="post-desc">From content to customer service to financial analysis &mdash; these tools are saving business owners 10+ hours a week.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 8 min read</div>
     </a>
-
-    <a class="blog-card" href="/blog/google-business-profile-setup-contractors/">
-      <span class="post-cat-tag">💼 Business</span>
-      <h3 class="card-title">How to Set Up Google Business Profile in 2025 (Step-by-Step for Contractors)</h3>
-      <p class="card-desc">The fastest free way to show up in local search. Setup, verification, and optimization — in plain English.</p>
-      <div class="card-footer-row"><span class="card-meta">June 2025 · 6 min</span><span class="card-read">Read →</span></div>
+    <a class="post-card" href="/blog/website-costing-you-customers.html" data-cat="web">
+      <div class="post-cat">Web Design</div>
+      <div class="post-title">Is Your Website Costing You Customers? 7 Signs It Is</div>
+      <div class="post-desc">Most small business owners don't realize their site is driving people away. Here's how to tell &mdash; and what to do.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 6 min read</div>
     </a>
-
-    <a class="blog-card" href="/blog/chatgpt-prompts-contractors/">
-      <span class="post-cat-tag">🤖 AI & Tools</span>
-      <h3 class="card-title">ChatGPT Prompts That Actually Work for Contractors and Tradespeople</h3>
-      <p class="card-desc">Specific, tested, ready to copy-paste — for estimates, customer replies, proposals, follow-ups, and more.</p>
-      <div class="card-footer-row"><span class="card-meta">July 2025 · 7 min</span><span class="card-read">Read →</span></div>
+    <a class="post-card" href="/blog/google-business-profile-setup-contractors.html" data-cat="business">
+      <div class="post-cat">Business</div>
+      <div class="post-title">How to Set Up Your Google Business Profile (Step-by-Step for Contractors)</div>
+      <div class="post-desc">A fully optimized Google Business Profile can get you calls from local customers without spending a dollar on ads.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 7 min read</div>
     </a>
-
-    <a class="blog-card" href="/blog/what-is-custom-saas-app/">
-      <span class="post-cat-tag">⚙️ SaaS</span>
-      <h3 class="card-title">What Is a Custom SaaS App and Does Your Business Actually Need One?</h3>
-      <p class="card-desc">How small businesses use lightweight custom tools to save hours every week — without a $50k development budget.</p>
-      <div class="card-footer-row"><span class="card-meta">July 2025 · 6 min</span><span class="card-read">Read →</span></div>
+    <a class="post-card" href="/blog/chatgpt-prompts-contractors.html" data-cat="ai">
+      <div class="post-cat">AI &amp; Automation</div>
+      <div class="post-title">The Best ChatGPT Prompts for Contractors (Copy &amp; Paste)</div>
+      <div class="post-desc">Ready-to-use AI prompts for estimates, client emails, project proposals, and social media &mdash; built specifically for contractors.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 5 min read</div>
     </a>
-
-    <a class="blog-card" href="/blog/get-found-google-without-ads/">
-      <span class="post-cat-tag">💼 Business</span>
-      <h3 class="card-title">How to Get Your Business Found on Google Without Paying for Ads</h3>
-      <p class="card-desc">Five free strategies that steadily grow your Google visibility — no ad spend required.</p>
-      <div class="card-footer-row"><span class="card-meta">July 2025 · 5 min</span><span class="card-read">Read →</span></div>
+    <a class="post-card" href="/blog/what-is-custom-saas-app.html" data-cat="business">
+      <div class="post-cat">Business</div>
+      <div class="post-title">What Is a Custom SaaS App (And Does Your Business Need One)?</div>
+      <div class="post-desc">Off-the-shelf software doesn't fit every business. Here's when a custom tool makes sense and what it actually costs.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 6 min read</div>
     </a>
-
-    <a class="blog-card" href="/blog/100-vs-5000-website/">
-      <span class="post-cat-tag">🌐 Web Design</span>
-      <h3 class="card-title">$100 vs $5,000 Website: What's the Real Difference?</h3>
-      <p class="card-desc">An honest breakdown of what you actually get at different price points — so you can make the right call for your business.</p>
-      <div class="card-footer-row"><span class="card-meta">July 2025 · 4 min</span><span class="card-read">Read →</span></div>
+    <a class="post-card" href="/blog/get-found-google-without-ads.html" data-cat="web">
+      <div class="post-cat">Web Design</div>
+      <div class="post-title">How to Get Found on Google Without Paying for Ads</div>
+      <div class="post-desc">SEO doesn't have to be complicated. These fundamentals will get your local business ranking for the right searches.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 7 min read</div>
     </a>
-
+    <a class="post-card" href="/blog/100-vs-5000-website.html" data-cat="web">
+      <div class="post-cat">Web Design</div>
+      <div class="post-title">$100 Website vs $5,000 Website: What You're Actually Paying For</div>
+      <div class="post-desc">The difference isn't always quality &mdash; sometimes it's just agency overhead. Here's what actually matters.</div>
+      <div class="post-meta">Raymond Hockersmith &middot; 5 min read</div>
+    </a>
   </div>
 </main>
-
 <footer>
-  <div class="footer-inner">
-    <div class="footer-logo">Drift<span>ocity</span></div>
-    <div class="footer-links">
-      <a href="/">Home</a>
-      <a href="/blog/">Blog</a>
-      <a href="/#webdesign">Web Design</a>
-      <a href="/#products">Products</a>
-      <a href="/#contact">Contact</a>
-    </div>
-    <div class="footer-copy">© 2025 Driftocity · driftocity.com · (765) 553-1097</div>
+  <div class="fi">
+    <div class="fl">Drift<span>ocity</span></div>
+    <div class="flinks"><a href="/">Home</a><a href="/products/">Products</a><a href="/geoclock/">GeoClock</a><a href="/contact/">Contact</a></div>
+    <div class="fc">&copy; 2025 Driftocity &middot; driftocity.com</div>
   </div>
 </footer>
-
-</body>
-</html>
+<script>
+function filterBlog(cat){
+  document.querySelectorAll('.cat-tab').forEach(t=>t.classList.remove('active'));
+  event.target.classList.add('active');
+  document.querySelectorAll('.post-card').forEach(c=>{
+    c.classList.toggle('hidden', cat!=='all' && c.dataset.cat!==cat);
+  });
+}
+</script>
+</body></html>
