@@ -791,10 +791,10 @@
       <p class="section-sub">SaaS tools and PDF guides — instant download, built for results.</p>
 
       <div class="cat-tabs">
-        <button class="cat-tab active"  data-cat="all">All Products</button>
-        <button class="cat-tab"  data-cat="saas">🛠️ SaaS Apps</button>
-        <button class="cat-tab"  data-cat="pdf">📄 PDF Guides</button>
-        <button class="cat-tab" onclick="window.location='/webdesign/'" data-cat="webdesign">🌐 Web Design</button>
+        <button class="cat-tab active" data-cat="all" onclick="filter(this,'all')">All Products</button>
+        <button class="cat-tab" data-cat="saas" onclick="filter(this,'saas')">🛠️ SaaS Apps</button>
+        <button class="cat-tab" data-cat="pdf" onclick="filter(this,'pdf')">📄 PDF Guides</button>
+        <button class="cat-tab" data-cat="webdesign" onclick="window.location='/webdesign/'">🌐 Web Design</button>
       </div>
 
       <div class="product-grid" id="productGrid">
@@ -907,5 +907,18 @@
     </div>
   </div>
 </footer>
+<script>
+function filter(btn, cat) {
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
 </body>
-                   </html>
+</html>
