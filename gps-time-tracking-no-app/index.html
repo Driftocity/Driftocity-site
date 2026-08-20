@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>GPS Employee Time Tracking Without an App — Browser-Based Geofence Clock | GeoClock</title>
+<meta name="description" content="GeoClock GPS time tracking requires no app download. Employees clock in from a browser link. GPS geofence enforces location. No installation, no accounts for crew members."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://driftocity.com/gps-time-tracking-no-app/"/>
+<meta property="og:title" content="GPS Employee Time Tracking Without an App — Browser-Based Geofence Clock | GeoClock"/>
+<meta property="og:description" content="GeoClock GPS time tracking requires no app download. Employees clock in from a browser link. GPS geofence enforces location. No installation, no accounts for crew members."/>
+<meta property="og:url" content="https://driftocity.com/gps-time-tracking-no-app/"/>
+<meta property="og:image" content="https://driftocity.com/estimatepro-og.png"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GeoClock","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"GPS-verified employee time tracking for field crews. Flat monthly pricing, no per-user fees.","offers":[{"@type":"Offer","price":"19.99","priceCurrency":"USD"}],"publisher":{"@type":"Organization","name":"Driftocity","url":"https://driftocity.com"}}</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HYT4R5NK96"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-HYT4R5NK96");</script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0A0E1A;--navy2:#111827;--indigo:#5B4EFF;--indigo2:#7B6FFF;--ghost:#F0F2FF;--slate:#8892A4;--amber:#F5A623;--green:#4ADE80;--red:#F87171;--card-bg:#131929;--border:rgba(91,78,255,0.18)}
+body{font-family:'Inter',sans-serif;background:var(--navy);color:var(--ghost);line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,14,26,0.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;text-decoration:none}.nav-logo span{color:var(--indigo)}
+.nav-links{display:flex;gap:8px;list-style:none}.nav-links a{color:var(--slate);text-decoration:none;font-size:0.875rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:all 0.2s}.nav-links a:hover,.nav-links a.active{color:#fff;background:rgba(91,78,255,0.12)}
+.nav-cta{background:var(--indigo)!important;color:#fff!important;border-radius:8px!important;padding:8px 16px!important}
+.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:22px;height:2px;background:var(--ghost);border-radius:2px;transition:all 0.3s;transform-origin:center}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamburger.open span:nth-child(2){opacity:0}.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:720px){.hamburger{display:flex}.nav-links{display:none;position:fixed;top:64px;left:0;right:0;background:var(--navy2);flex-direction:column;padding:16px 24px 24px;border-bottom:1px solid var(--border);gap:4px;z-index:999}.nav-links.open{display:flex}}
+main{flex:1;padding:100px 24px 80px;max-width:900px;margin:0 auto;width:100%}
+h1{font-family:'Syne',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:#fff;line-height:1.15;margin-bottom:16px}
+h2{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;color:#fff;margin:40px 0 12px}
+h3{font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;color:#fff;margin:24px 0 8px}
+p{color:var(--slate);font-size:0.975rem;line-height:1.8;margin-bottom:16px}
+p strong{color:#fff}
+.label{font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--indigo2);margin-bottom:12px;display:block}
+.hero-sub{font-size:1.1rem;color:var(--slate);line-height:1.75;margin-bottom:32px;max-width:700px}
+.btn-primary{background:var(--indigo);color:#fff;border:none;border-radius:10px;padding:14px 28px;font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:600;cursor:pointer;transition:all 0.2s;text-decoration:none;display:inline-block;margin-right:12px;margin-bottom:12px}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(91,78,255,0.4)}
+.btn-outline{background:transparent;color:var(--ghost);border:1px solid var(--border);border-radius:10px;padding:14px 28px;font-family:'Inter',sans-serif;font-size:0.95rem;font-weight:500;cursor:pointer;transition:all 0.2s;text-decoration:none;display:inline-block;margin-bottom:12px}
+.btn-outline:hover{border-color:var(--indigo)}
+.card{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:16px}
+.card h3{margin-top:0}
+.faq-item{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:22px;margin-bottom:14px}
+.faq-item h3{font-size:0.95rem;margin:0 0 8px}
+.faq-item p{margin:0;font-size:0.875rem}
+.comp-table{width:100%;border-collapse:collapse;margin:24px 0}
+.comp-table th{font-family:'Syne',sans-serif;font-size:0.85rem;font-weight:700;padding:14px 16px;text-align:left;border-bottom:2px solid var(--border);color:var(--slate)}
+.comp-table th.hl{color:var(--indigo2);background:rgba(91,78,255,0.06)}
+.comp-table td{padding:12px 16px;font-size:0.875rem;border-bottom:1px solid rgba(255,255,255,0.05);color:var(--slate)}
+.comp-table td.hl{background:rgba(91,78,255,0.04);color:#fff;font-weight:600}
+.yes{color:var(--green);font-weight:700}.no{color:var(--red);font-weight:700}
+.cta-box{background:rgba(91,78,255,0.08);border:1px solid rgba(91,78,255,0.25);border-radius:14px;padding:28px;margin:40px 0}
+.cta-box h2{margin-top:0}
+.pill-grid{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.pill{background:rgba(91,78,255,0.1);border:1px solid rgba(91,78,255,0.25);border-radius:100px;padding:6px 16px;font-size:0.8rem;color:var(--indigo2);font-weight:600}
+footer{background:var(--navy2);border-top:1px solid var(--border);padding:48px 24px 28px;margin-top:auto}
+.fi{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.fl{font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff}.fl span{color:var(--indigo)}
+.flinks{display:flex;gap:20px;flex-wrap:wrap}.flinks a{font-size:0.8rem;color:var(--slate);text-decoration:none}.flinks a:hover{color:#fff}
+.fc{font-size:0.8rem;color:var(--slate);width:100%;text-align:center;margin-top:16px;padding-top:16px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<nav><a class="nav-logo" href="/">Drift<span>ocity</span></a>
+  <button class="hamburger" id="hbg" onclick="this.classList.toggle('open');document.getElementById('nl').classList.toggle('open')"><span></span><span></span><span></span></button>
+  <ul class="nav-links" id="nl">
+    <li><a href="/">Home</a></li><li><a href="/products/">Products</a></li>
+    <li><a href="/geoclock/" class="active">GeoClock</a></li><li><a href="/blog/">Blog</a></li>
+    <li><a href="/about/">About</a></li><li><a href="/contact/">Contact</a></li>
+    <li><a href="/geoclock/#pricing" class="nav-cta">See Plans</a></li>
+  </ul>
+</nav>
+<main>
+<span class="label">No-App GPS Time Tracking</span>
+<h1>GPS Employee Time Tracking Without an App</h1>
+<p class="hero-sub">Most GPS time tracking tools require employees to download and install an app. GeoClock doesn't. Your crew opens a browser link on any smartphone, GPS verification happens automatically, and they're clocked in. No download, no account, no friction.</p>
+<a href="/geoclock/#pricing" class="btn-primary">Try GeoClock Free</a>
+<a href="/geoclock/" class="btn-outline">See All Features</a>
 
+<h2>Why No-App Time Tracking Matters for Field Crews</h2>
+<p>Getting a construction crew to install an app is harder than it sounds. Some employees have old phones with limited storage. Some are resistant to new technology. Some simply won't do it. Every person who doesn't install the app is a person you can't track.</p>
+<p>GeoClock solves this by running entirely in a mobile web browser — the same browser your crew already uses every day. You send them a link, they bookmark it, they tap it every morning. That's the entire process.</p>
+
+<h2>How Browser-Based Clock-In Works</h2>
+<div class="card"><h3>1. You set up your account and geofence</h3><p>Takes about 10 minutes. You get a unique clock-in link for your crew.</p></div>
+<div class="card"><h3>2. You text or email the link to your crew</h3><p>They save it as a bookmark on their phone home screen. Looks and works like an app — without the installation.</p></div>
+<div class="card"><h3>3. They open the link and tap their name</h3><p>No login, no password, no account required for crew members. They just tap their name from the list.</p></div>
+<div class="card"><h3>4. GPS verification happens automatically</h3><p>The browser checks their GPS location against your geofence. Inside = clocked in. Outside = blocked.</p></div>
+<div class="card"><h3>5. You see it live on your dashboard</h3><p>Their clock-in appears instantly on your admin dashboard with timestamp and location confirmation.</p></div>
+
+<h2>GeoClock vs App-Based Time Tracking</h2>
+<div style="overflow-x:auto;"><table class="comp-table">
+<thead><tr><th>Factor</th><th class="hl">GeoClock (Browser)</th><th>App-Based Tools</th></tr></thead>
+<tbody>
+<tr><td>Installation required</td><td class="hl"><span class="yes">✓ None</span></td><td><span class="no">✗ App store download</span></td></tr>
+<tr><td>Works on any phone</td><td class="hl"><span class="yes">✓ Any browser</span></td><td>Depends on OS version</td></tr>
+<tr><td>Employee account needed</td><td class="hl"><span class="yes">✓ No account needed</span></td><td><span class="no">✗ Account + login required</span></td></tr>
+<tr><td>Setup time for crew</td><td class="hl">30 seconds</td><td>5–15 minutes per person</td></tr>
+<tr><td>GPS enforcement</td><td class="hl"><span class="yes">✓ Full geofence</span></td><td>Varies by app</td></tr>
+<tr><td>Storage on employee phone</td><td class="hl"><span class="yes">✓ None used</span></td><td><span class="no">✗ App storage required</span></td></tr>
+</tbody></table></div>
+
+<h2>Which GPS Time Tracking Apps Require Installation?</h2>
+<p><strong>Hubstaff</strong> — requires app installation on employee phones. Available on iOS and Android.</p>
+<p><strong>ClockShark</strong> — requires app installation. Employees need accounts and login credentials.</p>
+<p><strong>TimeTrakGO</strong> — requires app installation for GPS tracking features.</p>
+<p><strong>GeoClock</strong> — browser-based. No installation. No employee accounts. Works on any smartphone.</p>
+<div class="cta-box">
+<h2>Start Tracking Your Crew Today</h2>
+<p>Plans start at $19.99/mo flat — no per-user fees, no contracts, cancel anytime.</p>
+<a href="https://buy.stripe.com/aFa3cv9Tu7PocZJcx90000g" target="_blank" class="btn-primary">Starter — $19.99/mo</a>
+<a href="https://buy.stripe.com/8x2bJ17Lm1r08Jt8gT0000h" target="_blank" class="btn-primary">Team — $39.99/mo</a>
+<a href="https://buy.stripe.com/14AcN54zab1A9Nx8gT0000i" target="_blank" class="btn-outline">Crew — $59.99/mo</a>
+<p style="margin-top:12px;font-size:0.82rem;">Questions? Call Raymond at <a href="tel:7655531097" style="color:var(--indigo2);">(765) 553-1097</a></p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item"><h3>Does GPS work in a browser without an app?</h3><p>Yes. Modern mobile browsers support GPS location access through the Web Geolocation API. When your employee opens the clock-in link, the browser requests location permission once and uses it for GPS verification.</p></div>
+<div class="faq-item"><h3>Is browser-based GPS as accurate as an app?</h3><p>Yes. Browser GPS uses the same device GPS hardware as native apps. Accuracy is identical.</p></div>
+<div class="faq-item"><h3>What if an employee denies location permission?</h3><p>If location permission is denied, clock-in is blocked. The employee must allow location access to use GeoClock.</p></div>
+<div class="faq-item"><h3>Can employees save the link to their home screen?</h3><p>Yes. On both Android and iPhone, employees can add the link to their home screen where it functions like an app icon. Most crew members do this after the first day.</p></div>
+</main>
+<footer><div class="fi"><div class="fl">Drift<span>ocity</span></div>
+<div class="flinks"><a href="/">Home</a><a href="/geoclock/">GeoClock</a><a href="/estimatepro/">EstimatePro</a><a href="/blog/">Blog</a><a href="/contact/">Contact</a></div>
+<div class="fc">© 2026 Driftocity · (765) 553-1097</div></div></footer>
+<script>function toggleMenu(){document.getElementById("nl").classList.toggle("open");document.getElementById("hbg").classList.toggle("open");}</script>
+</body></html>
