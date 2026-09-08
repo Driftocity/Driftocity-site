@@ -1,12 +1,47 @@
+# Driftocity.com — robots.txt
+# All crawlers welcome. No restrictions.
+
+# ── GLOBAL RULE — allow everything ──────────────────────
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
+# ── GOOGLE ──────────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+# ── BING / MICROSOFT ────────────────────────────────────
 User-agent: Bingbot
 Allow: /
 
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# ── OPENAI / CHATGPT ────────────────────────────────────
 User-agent: GPTBot
 Allow: /
 
@@ -16,25 +51,116 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
+# ── ANTHROPIC / CLAUDE ──────────────────────────────────
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-Web
+Allow: /
+
+# ── PERPLEXITY ──────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── GOOGLE AI (GEMINI / BARD) ───────────────────────────
 User-agent: Google-Extended
 Allow: /
 
-User-agent: Applebot
+User-agent: Gemini
 Allow: /
 
-User-agent: Twitterbot
+User-agent: Bard
 Allow: /
 
+# ── META / FACEBOOK ─────────────────────────────────────
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# ── APPLE ───────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# ── TWITTER / X ─────────────────────────────────────────
+User-agent: Twitterbot
+Allow: /
+
+User-agent: Rogerbot
+Allow: /
+
+# ── AMAZON / ALEXA ──────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# ── LINKEDIN ────────────────────────────────────────────
+User-agent: LinkedInBot
+Allow: /
+
+# ── YAHOO ───────────────────────────────────────────────
+User-agent: Slurp
+Allow: /
+
+# ── DUCKDUCKGO ──────────────────────────────────────────
+User-agent: DuckDuckBot
+Allow: /
+
+# ── YANDEX ──────────────────────────────────────────────
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexImages
+Allow: /
+
+# ── BAIDU ───────────────────────────────────────────────
+User-agent: Baiduspider
+Allow: /
+
+# ── COHERE ──────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── COMMON CRAWL (feeds many AI models) ─────────────────
+User-agent: CCBot
+Allow: /
+
+# ── AI2 / SEMANTIC SCHOLAR ──────────────────────────────
+User-agent: AI2Bot
+Allow: /
+
+# ── YOU.COM ─────────────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+# ── SEMRUSH / SEO TOOLS ─────────────────────────────────
+User-agent: SemrushBot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: MJ12bot
+Allow: /
+
+User-agent: DotBot
+Allow: /
+
+# ── ARCHIVE.ORG (WAYBACK MACHINE) ───────────────────────
+User-agent: archive.org_bot
+Allow: /
+
+# ── SITEMAP ─────────────────────────────────────────────
 Sitemap: https://driftocity.com/sitemap.xml
